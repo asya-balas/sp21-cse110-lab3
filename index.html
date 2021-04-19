@@ -102,12 +102,16 @@
             <h2>Entry from Two Days Ago; <span class="date">Date: 04/09/21</span></h2>
             
             <h4>Things I Did Today:</h4>
-            <ol>
-                <li>Grocery Shopping</li>
-                <li>Went to Barnes & Noble</li>
-                <li>Online Shopping</li>
-                <li>Got an IPad for notes!!! and drawing!!</li>
+            <ul class="flex_container">
+                <li class="item_for_flex">Grocery Shopping</li>
+                <li class="item_for_flex">Went to Barnes & Noble</li>
+                <li class="item_for_flex">Online Shopping</li>
+                <li class="item_for_flex">Got an IPad for notes!!</li>
             </ol>
+
+            <br>
+            <br>
+
 
             <h4>Random Stuff:</h4>
             <p>Zeus was super cute today! <br>
@@ -122,13 +126,12 @@
 
         <footer>
             <h5 id="add-entry">Want to Add Another Entry?</h5>
-
-            <form>
+            <div class="foot"><form>
                 <label for="name">Enter the date of Entry: </label>
                 <input type="date" name="date" id="date" required> <br>
                 <br>
 
-                <label for="name">Enter your name: </label>
+                <label for="name" id="name_entry">Enter your name: </label>
                 <input type="text" name="name" id="name" required> <br>
                 <br>
 
@@ -190,7 +193,8 @@
                 <br>
 
                 <button type="button">Add Entry</button>
-            </form>
+            </form></div>
         </footer>
+    
     </body>
 </html>
