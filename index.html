@@ -4,14 +4,20 @@
         <meta charset="UTF-8">
         <title>Your Online Journal</title>
         <link rel="icon" type="image/png" href="images/journal.webp">
+        <link rel="stylesheet" href="stylingsheet1.css">
+        <style>
+            body{
+                background-color: lightblue; /*changing the background color to one of my favorites*/
+            }
+        </style>
     </head>
     <body>
         <header>
-            <div>All Entries</div>
+            <div class="box1"> <h2 id="main_header"><strong>All Entries</strong></h2></div>
             <nav>
                 <ul>
-                    <li><a href="#Today's-Entry">Today's Entry</a></li>
-                    <li><a href="#Yesterday's-Entry">Yesterday's Entry</a></li>
+                    <li><a href="#Todays_Entry">Today's Entry</a></li>
+                    <li><a href="#Yesterdays-Entry">Yesterday's Entry</a></li>
                     <li><a href="#Two-Days-Ago-Entry">Entry from Two Days Ago</a></li>
                     <li><a href="#add-entry">Add New Entry</a></li>
                 </ul>
@@ -20,17 +26,17 @@
 
         <main>
         
-            <h1>Three Most Recent Entries:</h1>
+            <h1 style="color:black;text-align:center;">Three Most Recent Entries:</h1>
 
         <hr>
 
-        <section id="Today's-Entry">
+        <section id="Todays_Entry">
             <h2>Today's Entry; <span class="date">Date: 04/11/21</span></h2>
-            <p>
+            <div class="p2"><p>
                 Today I went on a 1 hour walk along the bluffs. The ocean looked <i>beautiful</i>. The walk was probably the highlight of my day. <br>
                 I've also listened to a lot of AJR today-- <em> their songs are so good.</em> 
 
-            </p>
+            </p></div>
 
             <img src="images/ocean.jpg" alt="ocean" width=1000 height=500> 
 
@@ -45,13 +51,13 @@
 
         <hr>
 
-        <section id="Yesterday's-Entry">
+        <section id="Yesterdays-Entry">
             <h2>Yesterday's Entry; <span class="date">Date: 04/10/21</span></h2>
-            <p>
+            <div class="p1"><p>
                 My co lead and I set up our first meetings for our project, so that was exciting. It really isn't all the easy to coordinate a meeting when
                 all seven people say they are free. It is all part of learning that you can't please everyone, so that's some more experience with that.
                 This week got so much busier though, so we'll see how it goes. <b>Time management is a struggle, but we're getting there.</b>
-            </p>
+            </p> </div>
 
             <h4>A <b>Bad</b> Pick Up Line My Friend Told Me Today</h4>
 

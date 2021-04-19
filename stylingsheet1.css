@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Antonio";
+  src: url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap");
+}
+
+html {
+  font-family: "Antonio", sans-serif, serif;
+}
+
+.box1 {
+    background-color: #610DAA;
+    border-width: 2.5px;
+    border-radius: 5cm;
+    border-style: solid;
+    border-color: black;
+  }
+
+h1, h2, h3, h4 {
+  color: rgb(0, 0, 102);
+}
+
+#main_header{
+    color: white;
+}
+
+#Todays_Entry{
+    text-decoration: underline black;
+}
+
+
+.date{
+    color: hsl(184, 78%, 45%)
+}
+
+* {
+    margin: 5;
+}
+
+.p1{
+    font-family: 'Antonio', serif;
+}
+
+.p2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    color: #000066;
+}
