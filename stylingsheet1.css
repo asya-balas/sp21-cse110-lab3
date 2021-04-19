@@ -7,7 +7,22 @@ html {
   font-family: "Antonio", sans-serif, serif;
 }
 
-.box1 {
+@media screen and (max-width: 992px) { /*media query*/
+  body {
+    background-color:lavender;
+  }
+
+  .box1, .foot{
+      width: 100%;
+  }
+}
+
+img + p { /*adjacent child selector*/
+  font-size:larger;
+  color:darkorchid;
+}
+
+.box1 { /*Heading box*/
     background-color: #610DAA;
     border-width: 2.5px;
     border-radius: 5cm;
@@ -17,10 +32,22 @@ html {
     width: 15vw;
     max-width: 100em;
     max-height: 100em;
-  }
+}
 
-h1, h2, h3, h4 {
+ol.tasks > li { /*child selector*/
+  color: maroon;
+  font-size: medium;
+  font-family: cursive;
+}
+
+h1, h2, h3, h4 { /*heading styling*/
   color: rgb(0, 0, 102);
+}
+
+p ~ span{ /*general sibling selector*/
+    font-family: fantasy;
+    font-size: large;
+    color:orangered;
 }
 
 #main_header{
@@ -34,12 +61,63 @@ h1, h2, h3, h4 {
 }
 
 
-.date{
+.date{ /*date styling*/
     color: hsl(184, 78%, 45%)
+}
+
+span.songs{
+    background-color: cornflowerblue;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    border: 2px solid blue; 
+}
+
+span.songs2{
+    background-color: palevioletred;
+    display: inline;
+    width: 800px;
+    height: 50px;
+    padding: 5px;
+    border: 2px solid black; 
 }
 
 * {
     margin: 2mm;
+}
+
+button:hover {
+  color:black;
+  background-color: aqua;
+}
+
+a:active {
+  color:greenyellow;
+  background-color: pink;
+}
+
+li li{
+    list-style-type: circle;
+    color:white;
+}
+
+a[href^="#"]{
+    color: purple;
+}
+
+div.relative{
+    position: relative;
+    left: 50px;
+    border: 3px dotted black;
+}
+
+div.sticky{
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: gray;
+    border: 2px dashed black;
 }
 
 .p1{
@@ -57,6 +135,30 @@ p{
     color: #000066;
     margin: auto;
 }
+
+.item-1 {
+  grid-area: header1;
+}
+.item-2 {
+  grid-area: header2;
+}
+.item-3 {
+  grid-area: main1;
+}
+.item-4 {
+  grid-area: main2;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header1 . . header2"
+    "main1 . . main2";
+
+}
+
 #add-entry{ /*styling for heading of footer*/
     border-width: 2.5px;
     border-style: dashed;
@@ -64,7 +166,7 @@ p{
     padding: 10px 10px 10px 10px;
     margin: 20px 20px 20px 20px;
 }
-.foot{
+.foot{ /*footer styling*/
    font-family: Georgia, 'Times New Roman', Times, serif;
    border-style: solid;
    border-width: 4px;
